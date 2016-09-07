@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.login.LoginMainActivity" >
+
+    <TextView
+        android:id="@+id/TVNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:text="Nick :" />
+
+    <EditText
+        android:id="@+id/ETNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVNick"
+        android:layout_alignBottom="@+id/TVNick"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/TVNick"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TVCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TVNick"
+        android:layout_below="@+id/ETNick"
+        android:layout_marginTop="26dp"
+        android:text="correo :" />
+
+    <EditText
+        android:id="@+id/ETCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVCorreo"
+        android:layout_alignBottom="@+id/TVCorreo"
+        android:layout_toRightOf="@+id/TVCorreo"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/BTConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BTAdicionar"
+        android:layout_alignBottom="@+id/BTAdicionar"
+        android:layout_alignRight="@+id/ETCorreo"
+        android:layout_marginRight="42dp"
+        android:text="Consultar" />
+
+    <Button
+        android:id="@+id/BTAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TVCorreo"
+        android:layout_below="@+id/ETCorreo"
+        android:layout_marginTop="30dp"
+        android:text="Adicionar" />
+
+    <ListView
+        android:id="@+id/LVConsulta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BTAdicionar"
+        android:layout_below="@+id/BTConsulta"
+        android:layout_toLeftOf="@+id/BTConsulta" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/LVConsulta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BTConsulta"
+        android:layout_below="@+id/BTConsulta" >
+    </ListView>
+
+</RelativeLayout>
